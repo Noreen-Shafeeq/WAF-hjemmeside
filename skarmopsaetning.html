@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Skærmopsætning - WAF Hjælp</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
       font-family: 'Poppins', sans-serif;
@@ -25,45 +25,84 @@
     }
     nav a {
       color: white;
-      margin-left: 1rem;
       text-decoration: none;
+      margin-left: 1rem;
       font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
     }
     main {
       padding: 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
     }
     h1 {
       color: #2E7D32;
     }
-    a.button {
-      display: inline-block;
-      margin-top: 1rem;
-      text-decoration: none;
-      color: white;
-      background-color: #2E7D32;
-      padding: 0.5rem 1rem;
-      border-radius: 8px;
+    details {
+      margin-bottom: 1rem;
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 5px;
+    }
+    summary {
+      font-weight: bold;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #eee;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="logo.png" alt="Unity Skolen logo" />
+    <nav>
+      <a href="index.html">Forside</a>
+      <a href="skarmopsaetning.html">Skærm</a>
+      <a href="login.html">Login</a>
+      <a href="whiteboard.html">Whiteboard</a>
+      <a href="tilslutning.html">Tilslutning</a>
+      <a href="sidebar_navigation.html">Navigation</a>
+    </nav>
+  </header>
 
-<header>
-  <img src="logo.png" alt="Unity logo">
-  <nav>
-    <a href="index.html">Forside</a>
-    <a href="skarmopsaetning.html">Skærm</a>
-    <a href="login.html">Login</a>
-    <a href="whiteboard.html">Whiteboard</a>
-    <a href="tilslutning.html">Tilslutning</a>
-    <a href="sidebar_navigation.html">Navigation</a>
-  </nav>
-</header>
+  <main>
+    <h1>Skærmopsætning</h1>
+    <p>Her finder du hjælp til at tænde og slukke skærmen, bruge knapperne og navigere.</p>
 
-<main>
-  <h1>Skærmopsætning</h1>
-  <p>Her finder du hjælp til at tænde og slukke skærmen, bruge knapperne og navigere.</p>
-</main>
+    <section>
+      <h2>Spørgsmål og svar</h2>
 
+      <details>
+        <summary>Hvordan tænder jeg skærmen?</summary>
+        <p>Tryk på den runde power-knap i bunden af skærmen. Vent ca. 10 sekunder.</p>
+      </details>
+
+      <details>
+        <summary>Hvordan slukker jeg skærmen?</summary>
+        <p>Hold power-knappen nede i 3 sekunder, indtil skærmen slukker.</p>
+      </details>
+
+      <details>
+        <summary>Hvordan bruger jeg knapperne på skærmen?</summary>
+        <p>Knapperne i bunden styrer volumen, kildevalg og input. Se evt. billeder på whiteboard-siden.</p>
+      </details>
+
+      <details>
+        <summary>Hvordan navigerer jeg i menuen?</summary>
+        <p>Brug fjernbetjeningen eller touch-funktion på skærmen for at gå i menuen.</p>
+      </details>
+    </section>
+  </main>
+
+  <footer>
+    &copy; 2025 Unity Skolen - WAF Hjælp
+  </footer>
 </body>
 </html>
